@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { LayoutDashboard, Truck, Map, Settings, Users } from "lucide-react"
+import { LayoutDashboard, Truck, Map, Settings, Users, Download } from "lucide-react"
 
 import Image from "next/image"
 
@@ -46,6 +46,12 @@ export function Sidebar() {
             <Link href="/conductores" className={isActive("/conductores")}>
               <Users className="h-5 w-5" />
               <span className="font-medium">Conductores</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/reportes" className={isActive("/reportes")}>
+              <Download className="h-5 w-5" />
+              <span className="font-medium">Reportes</span>
             </Link>
           </li>
         </ul>
