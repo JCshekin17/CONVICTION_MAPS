@@ -1,23 +1,28 @@
 import { AdminLayout } from "@/components/layout/admin-layout"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { MapView } from "@/components/dashboard/map-view"
+import { RouteStatusPanel } from "@/components/rutas/route-status-panel"
+import { TrafficAlertsPanel } from "@/components/rutas/traffic-alerts-panel"
+import Link from "next/link"
 
 export default function RutasPage() {
   return (
     <AdminLayout>
-      <div>
-        <h1 className="text-3xl font-bold tracking-tight">Rutas Asignadas</h1>
-        <p className="text-muted-foreground">Control y seguimiento de rutas logísticas.</p>
-      </div>
-      
-      <div className="mt-6">
-        <Card>
-          <CardHeader>
-            <CardTitle>Módulo en Construcción</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-muted-foreground">Aquí conectaremos la creación de rutas, asignación de paradas y conexión con los mapas.</p>
-          </CardContent>
-        </Card>
+      <div className="flex flex-col gap-4">
+        <div className="flex justify-between items-center">
+          <div>
+            <h1 className="text-3xl font-bold tracking-tight">Módulo de Visualización de Rutas</h1>
+            <p className="text-muted-foreground">Monitoreo en tiempo real de trayectos y alertas viales (TomTom).</p>
+          </div>
+          <Link href="/rutas/crear" className="bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 flex items-center gap-2">
+            Planificar Rutas
+          </Link>
+        </div>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-2 h-[600px]">
+          <MapView />
+          <RouteStatusPanel />
+          <TrafficAlertsPanel />
+        </div>
       </div>
     </AdminLayout>
   )

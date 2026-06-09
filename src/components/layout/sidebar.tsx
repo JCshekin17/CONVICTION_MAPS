@@ -3,6 +3,8 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { LayoutDashboard, Truck, Map, Settings, Users } from "lucide-react"
 
+import Image from "next/image"
+
 export function Sidebar() {
   const pathname = usePathname()
 
@@ -14,8 +16,11 @@ export function Sidebar() {
 
   return (
     <aside className="w-64 border-r bg-card hidden md:flex flex-col">
-      <div className="h-16 flex items-center px-6 border-b">
-        <span className="font-bold text-xl tracking-tight text-primary">Conviction OS</span>
+      <div className="h-24 flex items-center px-4 border-b gap-3">
+        <Image src="/logo.png" alt="Conviction Infinite Logo" width={55} height={55} className="object-contain" />
+        <span className="font-bold text-lg tracking-tight text-primary leading-tight">
+          CONVICTION<br />INFINITE
+        </span>
       </div>
       <nav className="flex-1 overflow-y-auto py-4">
         <ul className="space-y-1 px-3">
