@@ -11,15 +11,15 @@ import {
 
 const fleetData = [
   {
-    id: "TRK-001",
+    id: "V-01",
     driver: "Carlos Méndez",
     vehicle: "Volvo FH16",
     plate: "ABC-123",
     status: "En ruta",
-    destination: "Bogotá - Medellín",
+    destination: "Cartagena (Bocagrande)",
   },
   {
-    id: "TRK-002",
+    id: "V-02",
     driver: "Luis Torres",
     vehicle: "Scania R500",
     plate: "XYZ-987",
@@ -27,7 +27,7 @@ const fleetData = [
     destination: "N/A",
   },
   {
-    id: "TRK-003",
+    id: "V-03",
     driver: "Andrés Silva",
     vehicle: "Kenworth T880",
     plate: "DEF-456",
@@ -35,12 +35,12 @@ const fleetData = [
     destination: "Taller Principal",
   },
   {
-    id: "TRK-004",
+    id: "V-12",
     driver: "Jorge Ramírez",
-    vehicle: "Volvo FH16",
+    vehicle: "Scania V-12",
     plate: "GHI-789",
     status: "En ruta",
-    destination: "Cali - Buenaventura",
+    destination: "Cartagena (Mamonal)",
   },
 ]
 

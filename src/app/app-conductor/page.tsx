@@ -48,11 +48,11 @@ export default function AppConductorPage() {
         {/* Encabezado del Conductor */}
         <div className="bg-primary/10 rounded-xl p-4 border border-primary/20 flex items-center justify-between">
           <div>
-            <h2 className="font-bold text-primary text-lg">Hola, Luis Pérez</h2>
+            <h2 className="font-bold text-primary text-lg">Hola, Jorge Ramírez</h2>
             <p className="text-sm text-muted-foreground font-medium">Vehículo: Scania V-12</p>
           </div>
           <div className="h-12 w-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl shadow-md">
-            LP
+            JR
           </div>
         </div>
 
