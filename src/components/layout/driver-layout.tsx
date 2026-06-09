@@ -37,7 +37,7 @@ export function DriverLayout({ children }: { children: React.ReactNode }) {
           <ShieldAlert className="h-6 w-6" />
           <span className="text-[10px] font-bold">S.O.S</span>
         </button>
-        <Link href="/login" className="flex flex-col items-center gap-1 p-2 text-muted-foreground hover:text-primary transition-colors">
+        <Link href="/" className="flex flex-col items-center gap-1 p-2 text-muted-foreground hover:text-primary transition-colors">
           <User className="h-6 w-6" />
           <span className="text-[10px] font-bold">Cambiar Perfil</span>
         </Link>

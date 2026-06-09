@@ -25,7 +25,7 @@ export function Sidebar() {
       <nav className="flex-1 overflow-y-auto py-4">
         <ul className="space-y-1 px-3">
           <li>
-            <Link href="/" className={isActive("/")}>
+            <Link href="/dashboard" className={isActive("/dashboard")}>
               <LayoutDashboard className="h-5 w-5" />
               <span className="font-medium">Dashboard</span>
             </Link>
